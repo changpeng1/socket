@@ -1,0 +1,60 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Avahi	Avahi.cpp	/^Avahi::Avahi()$/;"	f	class:Avahi
+Avahi	Avahi.h	/^class Avahi$/;"	c
+Group	new.cpp	/^        Group(string &name,string &uuid,string &type,string &ip,unsigned int port):Name(name),Uuid(uuid),Type(type),Ip(ip),Port(port){};$/;"	f	class:Group
+Group	new.cpp	/^class Group$/;"	c	file:
+Ip	new.cpp	/^        string Ip;$/;"	m	class:Group	file:
+MSG_SIZE	new.cpp	15;"	d	file:
+Name	new.cpp	/^        string Name;$/;"	m	class:Group	file:
+PORT	new.cpp	14;"	d	file:
+Port	new.cpp	/^        unsigned int Port;$/;"	m	class:Group	file:
+Start_Browser	Avahi.cpp	/^void Avahi::Start_Browser()$/;"	f	class:Avahi
+Start_Publish	Avahi.cpp	/^void Avahi::Start_Publish()$/;"	f	class:Avahi
+Stop_Browser	Avahi.cpp	/^void Avahi::Stop_Browser()$/;"	f	class:Avahi
+Stop_Publish	Avahi.cpp	/^void Avahi::Stop_Publish()$/;"	f	class:Avahi
+Type	new.cpp	/^        string Type;$/;"	m	class:Group	file:
+Update_Publish	Avahi.cpp	/^void Avahi::Update_Publish()$/;"	f	class:Avahi
+Uuid	new.cpp	/^        string Uuid;$/;"	m	class:Group	file:
+__AVAHI__SUPPORT__	Avahi.h	2;"	d
+browse_callback	Avahi.cpp	/^void Avahi::browse_callback($/;"	f	class:Avahi
+browse_callback	client-browse-services.c	/^static void browse_callback($/;"	f	file:
+browser_client_callback	Avahi.cpp	/^void Avahi::browser_client_callback(AvahiClient *c, AvahiClientState state, void * userdata) $/;"	f	class:Avahi
+client	Avahi.cpp	/^AvahiClient *Avahi::client=NULL;$/;"	m	class:Avahi	file:
+client	Avahi.h	/^        static AvahiClient *client;$/;"	m	class:Avahi
+client_callback	client-browse-services.c	/^static void client_callback(AvahiClient *c, AvahiClientState state, AVAHI_GCC_UNUSED void * userdata) {$/;"	f	file:
+client_callback	client-publish-service.c	/^static void client_callback(AvahiClient *c, AvahiClientState state, AVAHI_GCC_UNUSED void * userdata) {$/;"	f	file:
+create_services	Avahi.cpp	/^void Avahi::create_services(AvahiClient *c) {$/;"	f	class:Avahi
+create_services	client-publish-service.c	/^static void create_services(AvahiClient *c) {$/;"	f	file:
+entry_group_callback	Avahi.cpp	/^void Avahi::entry_group_callback(AvahiEntryGroup *g, AvahiEntryGroupState state, AVAHI_GCC_UNUSED void *userdata) {$/;"	f	class:Avahi
+entry_group_callback	client-publish-service.c	/^static void entry_group_callback(AvahiEntryGroup *g, AvahiEntryGroupState state, AVAHI_GCC_UNUSED void *userdata) {$/;"	f	file:
+g_group	new.cpp	/^vector<class Group> g_group;$/;"	v
+get_ip	new.cpp	/^        string get_ip(){return Ip;};$/;"	f	class:Group
+group	Avahi.cpp	/^AvahiEntryGroup *Avahi::group=NULL;$/;"	m	class:Avahi	file:
+group	Avahi.h	/^        static AvahiEntryGroup *group;$/;"	m	class:Avahi
+group	client-publish-service.c	/^static AvahiEntryGroup *group = NULL;$/;"	v	file:
+main	Avahi.cpp	/^int main()$/;"	f
+main	client-browse-services.c	/^int main(AVAHI_GCC_UNUSED int argc, AVAHI_GCC_UNUSED char*argv[]) {$/;"	f
+main	client-publish-service.c	/^int main(AVAHI_GCC_UNUSED int argc, AVAHI_GCC_UNUSED char*argv[]) {$/;"	f
+main	new.cpp	/^int main(int argc,char*argv[])$/;"	f
+modify_callback	client-publish-service.c	/^static void modify_callback(AVAHI_GCC_UNUSED AvahiTimeout *e, void *userdata) {$/;"	f	file:
+name	Avahi.cpp	/^char* Avahi::name=NULL;$/;"	m	class:Avahi	file:
+name	Avahi.h	/^        static char * name;$/;"	m	class:Avahi
+name	client-publish-service.c	/^static char *name = NULL;$/;"	v	file:
+publish_client_callback	Avahi.cpp	/^void Avahi::publish_client_callback(AvahiClient *c, AvahiClientState state, AVAHI_GCC_UNUSED void * userdata) {$/;"	f	class:Avahi
+resolve_callback	Avahi.cpp	/^void Avahi::resolve_callback($/;"	f	class:Avahi
+resolve_callback	client-browse-services.c	/^static void resolve_callback($/;"	f	file:
+sb	Avahi.cpp	/^AvahiServiceBrowser *Avahi::sb=NULL;$/;"	m	class:Avahi	file:
+sb	Avahi.h	/^        static AvahiServiceBrowser *sb;$/;"	m	class:Avahi
+sender	new.cpp	/^int sender(char * mode)$/;"	f
+simple_poll	Avahi.cpp	/^AvahiSimplePoll * Avahi::simple_poll=NULL;$/;"	m	class:Avahi	file:
+simple_poll	Avahi.h	/^        static AvahiSimplePoll *simple_poll;$/;"	m	class:Avahi
+simple_poll	client-browse-services.c	/^static AvahiSimplePoll *simple_poll = NULL;$/;"	v	file:
+simple_poll	client-publish-service.c	/^static AvahiSimplePoll *simple_poll = NULL;$/;"	v	file:
+thread_func	new.cpp	/^void * thread_func(void * data)$/;"	f
+work_mode	new.cpp	/^char* work_mode;$/;"	v
+~Avahi	Avahi.cpp	/^Avahi::~Avahi()$/;"	f	class:Avahi

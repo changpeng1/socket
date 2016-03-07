@@ -104,7 +104,7 @@ static void create_services(AvahiClient *c) {
         fprintf(stderr, "Adding service '%s'\n", name);
 
         /* Create some random TXT data */
-        snprintf(r, sizeof(r), "random=%i", rand());
+        snprintf(r, sizeof(r), "HOST=192.168.1.101\r\nPORT=5000\r\nTYPE=Master\r\nID=1234567898\r\n");
 
         /* We will now add two services and one subtype to the entry
          * group. The two services have the same name, but differ in
@@ -112,7 +112,7 @@ static void create_services(AvahiClient *c) {
          * same name should be put in the same entry group. */
 
         /* Add the service for IPP */
-        if ((ret = avahi_entry_group_add_service(group, AVAHI_IF_UNSPEC, AVAHI_PROTO_INET, 0, name, "_ipp1._tcp", NULL, NULL, 651, "test=blah", r, NULL)) < 0) {
+        if ((ret = avahi_entry_group_add_service(group, AVAHI_IF_UNSPEC, AVAHI_PROTO_INET, 0, name, "_auralic._tcp", NULL, NULL, 6510, r, NULL)) < 0) {
 
             if (ret == AVAHI_ERR_COLLISION)
                 goto collision;
@@ -239,7 +239,7 @@ int main(AVAHI_GCC_UNUSED int argc, AVAHI_GCC_UNUSED char*argv[]) {
         goto fail;
     }
 
-    name = avahi_strdup("MegaPrinter");
+    name = avahi_strdup("GroupService");
 
     /* Allocate a new client */
     client = avahi_client_new(avahi_simple_poll_get(simple_poll), 0, client_callback, NULL, &error);
