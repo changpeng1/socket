@@ -100,7 +100,7 @@ int main(int argc,char*argv[])
     }
     work_mode = argv[1];
     pthread_t tid;
-    pthread_create(&tid,NULL,thread_func,(void*)work_mode);
+ //   pthread_create(&tid,NULL,thread_func,(void*)work_mode);
 
     struct sockaddr_in addrto;
     bzero(&addrto, sizeof(struct sockaddr_in));
@@ -155,7 +155,7 @@ int main(int argc,char*argv[])
         }
         else
         {       
-            printf("recieve from host %s\n%s\n", inet_ntoa( from.sin_addr),smsg);   
+            printf("new recieve from host %s\n%s\n", inet_ntoa( from.sin_addr),smsg);   
             string uuid,type,name,ip;
             unsigned int port;
             ip = inet_ntoa( from.sin_addr);
